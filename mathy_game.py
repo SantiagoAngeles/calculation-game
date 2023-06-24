@@ -15,7 +15,8 @@ def run():
 	7 - Mixed all *
 
 	8 - Quit *
-	
+
+	* = (not available yet)
 	"""
 
 	menu_opt = (input(menu))
@@ -44,12 +45,10 @@ def addtion():
 	snumber = random.randint(1, 100)
 	tnumber = random.randint(1, 100)
 
-	print("			" + "________________")
 	print(" ")
 	
 	print("			" + str(fnumber) + " + " + str(snumber) + " + " + str(tnumber) + " = " + "?")
 
-	print("			" + "________________")
 	print(" ")
 	
 	answer = int(fnumber + snumber + tnumber)
@@ -61,6 +60,7 @@ def addtion():
 
 	if user == answer:
 		print("						    Correct!, here you go")
+		print("     ____________________________________________________________________")
 
 	else:
 		pass
@@ -73,12 +73,10 @@ def substaction():
 	tnumber = random.randint(1, 100)
 
 
-	print("			" + "________________")
 	print(" ")
 	
 	print("			" + str(fnumber) + " - " + str(snumber) + " - " + str(tnumber) + " = " + "?")
 
-	print("			" + "________________")
 	print(" ")
 	
 	answer = int(fnumber - snumber - tnumber)
@@ -90,6 +88,7 @@ def substaction():
 
 	if user == answer:
 			print("						    Correct!, here you go")
+			print("     ____________________________________________________________________")
 
 	else:
 		pass
@@ -102,12 +101,10 @@ def mixed_as():
 
 #	count = 0
 
-	print("				" + "________________")
 	print(" ")
 	
 	print("				" + str(fnumber) + " + " + str(snumber) + " + " + str(tnumber) + " =")
 
-	print("				" + "________________")
 	print(" ")
 	
 #	count += 1
@@ -122,6 +119,8 @@ def mixed_as():
 
 	if user == answer:
 		print("						    Correct!, here you go")
+		print("     ____________________________________________________________________")
+
 
 #	elif user == user[1]:
 #		print(count)
@@ -138,12 +137,10 @@ def product():
 
 #	count = 0
 
-	print("				" + "________________")
 	print(" ")
 	
 	print("				" + str(fnumber) + " * " + str(snumber) + " * " + str(tnumber) + " =")
 
-	print("				" + "________________")
 	print(" ")
 	
 #	count += 1
@@ -158,6 +155,7 @@ def product():
 
 	if user == answer:
 		print("						    Correct!, here you go")
+		print("     ____________________________________________________________________")
 
 #	elif user == user[1]:
 #		print(count)

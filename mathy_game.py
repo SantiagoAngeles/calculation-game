@@ -6,15 +6,15 @@ def run():
 	menu = """
 	1 - Addition
 	2 - Subtraction
-	3 - Mixed Addtion & substraction
+	3 - Addtion and substraction
 	
-	3 - Product *
-	4 - Quotient *
-	5 - Mixed produc & quotient *
+	4 - Product
+	5 - Quotient *
+	6 - Product and quotient *
 
-	6 - Mixed all *
+	7 - Mixed all *
 
-	7 - Quit *
+	8 - Quit *
 	
 	"""
 
@@ -27,6 +27,8 @@ def run():
 			substaction()
 		elif menu_opt == "3":
 			mixed_as()
+		elif menu_opt == "4":
+			product()
 
 		else:
 			print("Type a valid option please :/")
@@ -58,7 +60,7 @@ def addtion():
 		user = int(input("Here's another chance =  "))
 
 	if user == answer:
-		print("	Correct!, here you go")
+		print("						    Correct!, here you go")
 
 	else:
 		pass
@@ -87,7 +89,7 @@ def substaction():
 		user = int(input("Here's another chance = "))
 
 	if user == answer:
-			print("Correct!, here you go")
+			print("						    Correct!, here you go")
 
 	else:
 		pass
@@ -119,13 +121,50 @@ def mixed_as():
 		user = int(input("Here's another chance =  "))
 
 	if user == answer:
-		print("						Correct!, here you go")
+		print("						    Correct!, here you go")
 
 #	elif user == user[1]:
 #		print(count)
 
 	else:
 		pass
+
+
+def product():
+	
+	fnumber = random.randint(-10, 10)
+	snumber = random.randint(-10, 10)
+	tnumber = random.randint(-10, 10)
+
+#	count = 0
+
+	print("				" + "________________")
+	print(" ")
+	
+	print("				" + str(fnumber) + " * " + str(snumber) + " * " + str(tnumber) + " =")
+
+	print("				" + "________________")
+	print(" ")
+	
+#	count += 1
+
+	answer = (fnumber * snumber * tnumber)
+	user = int(input("     Type your answer =  "))
+
+#	user = [int(input("Write your anwswer: ")), "q"]
+
+	while user != answer:
+		user = int(input("Here's another chance =  "))
+
+	if user == answer:
+		print("						    Correct!, here you go")
+
+#	elif user == user[1]:
+#		print(count)
+
+	else:
+		pass
+
 
 
 # HERE'S CODE TO IMPLEMENT A MENU TO KEEP PRACTICING OR JUST QUIT

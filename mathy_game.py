@@ -4,19 +4,22 @@ import random
 def run():
 
 	menu = """
-	1 - Addition
-	2 - Subtraction
-	3 - Addtion and substraction
+	1 - Addition				3 - Addtion and substraction
+	2 - Subtraction				4 - Equations 1 *
+	____________________________________________________________________
 	
-	4 - Product
-	5 - Quotient *
-	6 - Product and quotient *
+	5 - Product				7 - Product and quotient *
+	6 - Quotient				8 - Equations 2 *
+	____________________________________________________________________
+	*
+	9 - Odd numbers				11 - Operations and percentages
+	10 - Percentages			12 - Equations 3
+	____________________________________________________________________
 
-	7 - Mixed all *
+	13 - Matrices *
+	20 - Quit *
 
-	8 - Quit *
 
-	* = (not available yet)
 	"""
 
 	menu_opt = (input(menu))
@@ -28,8 +31,12 @@ def run():
 			substaction()
 		elif menu_opt == "3":
 			mixed_as()
-		elif menu_opt == "4":
+		elif menu_opt == "5":
 			product()
+		elif menu_opt == "6":
+			quotient()
+		elif menu_opt == "7":
+			pass
 
 		else:
 			print("Type a valid option please :/")
@@ -41,8 +48,8 @@ def run():
 
 def addtion():
 	
-	fnumber = random.randint(1, 100)
-	snumber = random.randint(1, 100)
+	fnumber = random.randint(1, 1000)
+	snumber = random.randint(1, 1000)
 	tnumber = random.randint(1, 100)
 
 	print(" ")
@@ -131,15 +138,19 @@ def mixed_as():
 
 def product():
 	
-	fnumber = random.randint(-10, 10)
-	snumber = random.randint(-10, 10)
-	tnumber = random.randint(-10, 10)
+	fnumber = random.randint(-12, 12)
+	snumber = random.randint(-12, 12)
+	tnumber = random.randint(-12, 12)
+
+	fnumber != 0
+	fnumber != 0
+	fnumber != 0
 
 #	count = 0
 
 	print(" ")
 	
-	print("				" + str(fnumber) + " * " + str(snumber) + " * " + str(tnumber) + " =")
+	print("				    " + str(fnumber) + " * " + str(snumber) + " * " + str(tnumber))
 
 	print(" ")
 	
@@ -151,7 +162,7 @@ def product():
 #	user = [int(input("Write your anwswer: ")), "q"]
 
 	while user != answer:
-		user = int(input("Here's another chance =  "))
+		user = int(input("     Let's try again  =  "))
 
 	if user == answer:
 		print("						    Correct!, here you go")
@@ -163,6 +174,43 @@ def product():
 	else:
 		pass
 
+
+def quotient():
+	
+	fnumber = random.randint(-100, 100)
+	#snumber = random.randint(-5, 5)
+
+	snumber = 5
+
+	#tnumber = random.randint(-100, 100)
+
+#	count = 0
+
+	print(" ")
+	
+	print("				    " + str(fnumber) + " / " + str(snumber)) #+ " / " + str(tnumber))
+
+	print(" ")
+	
+#	count += 1
+
+	answer = (fnumber // snumber) #/ tnumber)
+	user = float(input("     Type your answer =  "))
+
+#	user = [int(input("Write your anwswer: ")), "q"]
+
+	while user != answer:
+		user = float(input("     Let's try again  =  "))
+
+	if user == answer:
+		print("						    Correct!, here you go")
+		print("     ____________________________________________________________________")
+
+#	elif user == user[1]:
+#		print(count)
+
+	else:
+		pass
 
 
 # HERE'S CODE TO IMPLEMENT A MENU TO KEEP PRACTICING OR JUST QUIT
